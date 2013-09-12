@@ -5,15 +5,14 @@
 # file LICENSE or http://www.opensource.org/licenses/mit-license.php.
 
 from distutils.core import setup
-from scenariotest import get_version
 
-version = get_version().replace(' ', '-')
+version = '1.0'
 setup(name='scenariotest',
     version=version,
     description=(
         u"Combines a prototypical test case with a list of dictionaries (each "
         u"a dict of keyword arguments) and transforms the two into a series of "
-        u"unittest-compatible test cases"),
+        u"unittest-compatible test cases."),
     author='Jason Webb',
     author_email='bigjasonwebb@gmail.com',
     url='http://github.com/maaku/scenariotest/',
@@ -26,6 +25,9 @@ setup(name='scenariotest',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Topic :: Software Development :: Libraries :: Python Modules',
+    ],
+    install_requires=[
+        'six>=1.3.0',
     ],
 )
 

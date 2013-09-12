@@ -24,7 +24,7 @@ The original code this was based off of can be found on GitHub:
 # Python 2 and 3 compatibility utilities
 import six
 
-VERSION = (1,0,0, 'beta', 0)
+VERSION = (1,0,0, 'final', 0)
 
 def get_version():
     version = '%s.%s' % (VERSION[0], VERSION[1])
